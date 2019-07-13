@@ -55,32 +55,46 @@
 >	*	相对路径和绝对路径(以/开始前者没有)
 >	*	基础语法
 >>	*	常用轴：
->>	*	ancestor	祖先节点;
->>	*	ancestor-or-self	祖先节点并包含自身
->>	*	attribute	节点所有属性
->>	*	child 选择当前节点所有子节点
->>	*	parent	选取当前节点的父节点
->>	*	descendant	当前节点的所有后代节点
->>	*	descendant-or-self	当前节点的所有后代节点并包含自
->>	*	self	当前节点自身
->>	*	following-sibling	当前节点的兄弟节点
+>>>	*	ancestor	祖先节点;
+>>>	*	ancestor-or-self	祖先节点并包含自身
+>>>	*	attribute	节点所有属性
+>>>	*	child 选择当前节点所有子节点
+>>>	*	parent	选取当前节点的父节点
+>>>	*	descendant	当前节点的所有后代节点
+>>>	*	descendant-or-self	当前节点的所有后代节点并包含自
+>>>	*	self	当前节点自身
+>>>	*	following-sibling	当前节点的兄弟节点
 >>	*	节点测试(选择指定的轴)
->>	*	nodename	所有节点中选出具有nodename的节点
->>	*	text()	匹配所有文本类型节点	
+>>>	*	nodename	所有节点中选出具有nodename的节点
+>>>	*	text()	匹配所有文本类型节点	
 >>	*	node()	匹配的所有类型节点
->>	*	comment()	匹配的所有注释节点
->>	*	"*"	
->>	*	例:	child:book[position()=1]|name[position()=last()]
+>>>	*	comment()	匹配的所有注释节点
+>>>	*	"*"	不加区分的匹配
+>>>	*	例:	child:book[position()=1]|name[position()=last()]
 >>	*	或 or 和 and
 >>	*	多个路径通过"|"链接
 >>	*	除div	求余mod	等于=
 >>	*	常见函数:
->>	*	fn:postion()在父节点中的index
->>	*	fn:last()	项的数目()可以视作最后一项的index即为个数
->>	*	fn:name()	第一个节点的名称
->>	*	fn:root()	文档根节点
+>>>	*	fn:postion()在父节点中的index
+>>>	*	fn:last()	项的数目()可以视作最后一项的index即为个数
+>>>	*	fn:name()	第一个节点的名称
+>>>	*	fn:root()	文档根节点
 
+>	*	利用JAXL接口解析xml文件
+>	*	一般使用SAX解析器
+>	*	了解大致过程：每遇到一个标签就向外发送事件
 
+*	解析
+>	*	创建解析器，重写方法，包括开始元素文档和结束元素文档的方法
+>	*	主要是处理元素的方法
+>	*	主程序中创建工厂和解析器，导入xml路径
+
+*	生成
+>	*	创建xml保存流对象
+>	*	获取sax生成工厂对象实例
+>	*	生成处理者对象实例
+>	*	获取sax生成器
+>	*	最后生成文档以及文档中的元素
 
 *	遇到问题
 >	*	主要是以存储数据为主
