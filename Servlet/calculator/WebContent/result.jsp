@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%--
-	//java原有注释都可以使用:单行，多行
-	//jsp注释语法：
---%>
+<%
+	Object s = application.getAttribute("sum");
+%>
+<p>加法运算器：</p>
+<p>运算结果为：<%--=request.getAttribute("sum") --%><%=s %></p>
 </body>
 </html>

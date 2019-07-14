@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%--
-	//java原有注释都可以使用:单行，多行
-	//jsp注释语法：
---%>
+<h1 style="color:red">失败</h1>
 </body>
 </html>

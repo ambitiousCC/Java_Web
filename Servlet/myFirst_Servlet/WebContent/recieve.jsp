@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%--
-	//java原有注释都可以使用:单行，多行
-	//jsp注释语法：
---%>
+<%
+	//String re = (String)request.getAttribute("a");
+	//out.println(re);
+	
+	String ag = (String)application.getAttribute("b");
+	out.println(ag);
+%>
 </body>
 </html>
