@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://D:/JavaWeb-workspace/login_register_frame/WebContent/WEB-INF/lib/commons-io-1.4.jar!/" />
+      <root url="jar://D:/JavaWeb-workspace/login_register_frame/WebContent/WEB-INF/lib/servlet-api.jar!/" />
+      <root url="jar://D:/JavaWeb-workspace/login_register_frame/WebContent/WEB-INF/lib/commons-fileupload-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
