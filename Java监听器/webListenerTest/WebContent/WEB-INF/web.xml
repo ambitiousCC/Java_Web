@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>webListenerTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>version</param-name>
+  	<param-value>1.0</param-value>
+  </context-param>
+  
+  <listener>
+  	<listener-class>listenerTest.attributeListener</listener-class>
+  </listener>
+  
+  <!-- 
+  <listener>
+  	<listener-class>listenerTest.servletContextTest</listener-class>
+  </listener>
+  
+  <listener>
+  	<listener-class>listenerTest.httpSessionTest</listener-class>
+  </listener>
+  
+  <listener>
+  	<listener-class>listenerTest.requestListener</listener-class>
+  </listener>
+   -->
+  
+  <session-config>
+  	<session-timeout>1</session-timeout>
+  </session-config>
+  <!-- 
+  <listener>
+  	<listener-class>listenerTest.listenerTest</listener-class>
+  </listener>
+  <listener>
+  	<listener-class>listenerTest.listenerTest2</listener-class>
+  </listener>
+   -->
+</web-app>
