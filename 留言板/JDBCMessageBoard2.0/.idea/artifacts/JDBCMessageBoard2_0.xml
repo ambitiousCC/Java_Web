@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JDBCMessageBoard2.0">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDBCMessageBoard2_0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JDBCMessageBoard2.0/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JDBCMessageBoard2.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
